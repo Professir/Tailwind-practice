@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-box h1{
+    -webkit-text-stroke: 1px #fff;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="flex justify-center items-center 
+min-h-screen bg-body-bog
+font-poppins">
+    <!-- box -->
+      <div class="box 
+      relative w-96 h-[26.2rem] 
+      bg-box-bog rounded-lg overflow-hidden
+        before:z-10">
+        <!-- borderline -->
+        <span class="borderline
+        absolute top-0 inset-0 "></span>
+        <!-- sign in -->
+        <form action="" 
+        class="absolute inset-1 
+        bg-[#222] py-12 px-12 rounded-lg
+        flex flex-col z-10">
+            <h2 class="text-white font-medium 
+            text-center leading-[0.1rem]">Sign in</h2>
+            <!-- input-box -->
+            <div class="inputBox
+            relative w-[18.8rem] mt-9">
+                <input type="text" required="required" class="relative w-full p-inp-p bg-transparent outline-none shadow-none text-body-bog text-base leading-[.05rem] duration-[.5s] z-20 ">
+                <span class="absolute left-0 p-spa-p pointer-events-none text-[#8f8f8f] text-base leading-[.05rem] duration-[.5s]">Username</span>
+                <i class="absolute left-0 bottom-0 w-full h-[2px] bg-white rounded-[.25rem] overflow-hidden duration-[.5s] pointer-events-none"></i>
+            </div>
+            <!-- input-box-2 -->
+            <div class="inputBox
+            relative w-[18.8rem] mt-9">
+                <input type="password" required="required" class="relative w-full p-inp-p bg-transparent outline-none shadow-none text-body-bog text-base leading-[.05rem] duration-[.5s] z-20">
+                <span class="absolute left-0 p-spa-p pointer-events-none text-[#8f8f8f] text-base leading-[.05rem] duration-[.5s]">Password</span>
+                <i class="absolute left-0 bottom-0 w-full h-[2px] bg-white rounded-[.25rem] overflow-hidden duration-[.5s] pointer-events-none"></i>
+            </div>
+            <!-- links -->
+            <div class="links
+            flex justify-between">
+                <a href="#" class="my-3 mx-0 text-sm color-[#8f8f8f] no-underline">Forgot Password</a>
+                <a href="#" class="my-3 mx-0 text-sm color-[#8f8f8f] no-underline">Signup</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+      </div>
+</body>
+</html>

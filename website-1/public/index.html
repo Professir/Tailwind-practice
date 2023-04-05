@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Gemunu+Libre:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Open+Sans&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="dark">
+
+    <!-- Dark light toggle -->
+    <div class="fixed top-1 left-5 cursor-pointer text-lg">
+        <div class="text-white" id="sun"><i class="fa-solid fa-sun"></i></div>
+        <div class="text-black hidden" id="moon"><i class="fa-solid fa-moon"></i></div>
+        
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-white text-black dark:bg-black dark:text-safak-grey py-6 lg:py-12">
+        <!-- Header container -->
+        <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+            <!-- Logo -->
+            <a href="#" class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-safak-red to-safak-grey">Safak</a>
+            <!-- Mobile Menu -->
+            <div class="block md:hidden pr-4">
+                <div class="space-y-1 cursor-pointer">
+                    <div class="bg-safak-grey w-8 h-1 rounded-full"></div>
+                    <div class="bg-safak-grey w-8 h-1 rounded-full"></div>
+                    <div class="bg-safak-grey w-8 h-1 rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex justify-between flex-1">
+                <!-- Menu -->
+                <div class="flex items-center  lg:text-lg space-x-4 lg:space-x-8">
+                    <a href="#" class="hover:text-safak-melon   transition duration-2000 ">Movies</a>
+                    <a href="#" class="hover:text-safak-melon   transition duration-2000 ">celebrities</a>
+                    <a href="#" class="hover:text-safak-melon   transition duration-2000 ">blog</a>
+                    <a href="#" class="hover:text-safak-melon   transition duration-2000 ">news</a>
+                    <a href="#" class="hover:text-safak-melon   transition duration-2000 ">about</a>
+                </div>
+                <!-- login area -->
+                <div class="flex item-center space-x-4 lg:space-x-8">
+                    <!-- Search Area -->
+                    <form>
+                        <div class="group border-r px-2 lg:px-4 mx-2 lg:mx-4 py-0.5 lg:py-1 border-safak-red">
+                            <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-safak-red focus:outline-none w-24 lg:w-44  transition
+                            duration-500">
+                            <button class="-ml-4 group-hover:ml-0 transition duration-500"><i  class="fas fa-search group-hover:text-safak-red transition duration-500"></i></button>
+                        </div>
+                    </form>
+                    <!-- Signup Area -->
+                    <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg"> 
+                        <a href="#" class="">Login</a>
+                        <a href="#" class="bg-safak-red px-3 py-1 hover:bg-rose-600 hover:text-safak-grey cursor-pointer transition duration-500 whitespace-nowrap">Signup</a>
+                    </div>
+                   
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-96 md:h-128 group relative">
+        <!-- Hero image -->
+        <img src="./images/safak.jpeg" alt="SK" class="h-full w-full object-cover">
+
+        <!-- Hero content -->
+        <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black">
+            <!-- Hero content container -->
+            <div class="container pl-10 lg:pl-0">
+                <h3 class="text-safak-melon tracking-wider group-hover:mb-1 duration-500">Action, Drama, Thriller                    
+                </h3>
+                <h1 class="text-4xl lg:text-6xl text-safak-grey group-hover:mb-1 duration-500">The Dark Night</h1>
+                <p class="text-safak-grey group-hover:mb-2 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quas quaerat atque! Molestiae magnam inventore sapiente, id laboriosam repellendus autem!</p>
+                <!-- Detail container -->
+                <div class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000">
+                    <!-- Watch Buttons -->
+                    <div class="flex space-x-2 items-center cursor-pointer">
+                        <a href="#" class="text-safak-grey lg:text-lg hover:text-safak-red duration-500">Watch Trailer</a>
+                        <div class="flex  rounded-full h-8 w-8 items-center justify-center bg-safak-red text-safak-grey">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <!-- info Buttons -->
+                    <div class="flex space-x-2 items-center cursor-pointer">
+                        <a href="#" class="text-safak-grey text-lg hover:text-safak-red duration-500">Full Synopsis</a>
+                        <div class="flex  rounded-full h-8 w-8 items-center justify-center bg-safak-red text-safak-grey">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Points -->
+        <div class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000">
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-safak-red"></div>
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-safak-grey"></div>
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-safak-grey"></div>
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-safak-grey"></div>
+        </div>
+
+    </section>
+
+    <!-- Movies Section -->
+    <section class="py-24 bg-white text-black dark:bg-black dark:text-safak-grey">
+        <!-- movies content -->
+        <div class="container flex-row lg:flex lg:space-x-16 space-y-8 lg:space-y-0">
+            <!-- left content -->
+            <div class="basis-2/3">
+                <!-- titles -->
+                <div class="flex space-x-2 divide-x divide-safak-red divide-opacity-50 mb-8 pl-10 lg:pl-0">
+                    <h2 class="text-safak-red "><a href="#">Latest</a></h2>
+                    <h2 class= "pl-2 hover:text-safak-red duration-500"><a href="#">popular</a></h2>
+                    <h2 class= "pl-2 hover:text-safak-red duration-500"><a href="#">Best</a></h2>
+                </div>
+                <!-- images container -->
+                <div class="flex flex-wrap">
+                    <!-- image1 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+                        <img src="./images/safak2.jpeg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Safak</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image2 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+                        <img src="./images/marilyn2.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500 md:h-full">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Marilyn</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image3 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+                        <img src="./images/space.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500 md:h-full">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">space-1</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image4 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+                        <img src="./images/safak3.jpeg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Safak-2</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image5 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+                        <img src="./images/space2.jfif" class="group-hover:scale-110 group-hover:opacity-50 duration-500 h-full">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Space-2</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image6 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+                        <img src="./images/space3.jfif" class="group-hover:scale-110 group-hover:opacity-50 duration-500 h-full">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Astronaut</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image7 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+                        <img src="./images/space8.jfif" class="group-hover:scale-110 group-hover:opacity-50 duration-500 h-full">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Astronaut</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image8 -->
+                    <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+                        <img src="./images/safak.jpeg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+                        <div class="absolute px-6 bottom-8 opacity-0 group-hover:opacity-100">
+                            <h3 class= group-hover:text-safak-melon group-hover:mb-2 duration-500">Astronaut</h3>
+                            <p class="text-xs group-hover:mb-10 duration-500 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, beatae?</p>
+                            <!-- icons container -->
+                            <div class="absolute flex space-x-8 -bottom-2 group-hover:bottom-2 duration-500 ">
+                                <a href="#"><i class="fa-solid fa-play hover:text-safak-red"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right hover:text-safak-red"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right content -->
+            <div class="basis-1/3 pl-10 lg:pl-0">
+                <!-- title -->
+                <h2 class= mb-8">Hot news</h2>
+                <!-- News container -->
+                <div class="flex flex-row lg:flex-col lg:h-full lg:pb-16 space-y-4 justify-start lg:justify-between flex-wrap lg:flex-nowrap">
+                    <!-- item -->
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
+                        <!-- News image container -->
+                        <div class="basis-1/3 h-full"> <img src="./images/space4.jfif" class="h-full w-full object cover"></div>
+                        <!-- items detail -->
+                        <div class="basis-2/3 pl-8 group-hover:text-safak-melon group-hover:cursor-pointer duration-500">
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti.</p>
+                            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">On March 16 2023</p>
+                        </div>
+                    </div>
+                    <!-- item2 -->
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
+                        <!-- News image container -->
+                        <div class="basis-1/3 h-full"> <img src="./images/space5.jfif" class="h-full w-full object cover"></div>
+                        <!-- items detail -->
+                        <div class="basis-2/3 pl-8 group-hover:text-safak-melon group-hover:cursor-pointer duration-500">
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti.</p>
+                            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">On March 16 2023</p>
+                        </div>
+                    </div>
+                    <!-- item3 -->
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
+                        <!-- News image container -->
+                        <div class="basis-1/3 h-full"> <img src="./images/space6.jpeg" class="h-full w-full object cover"></div>
+                        <!-- items detail -->
+                        <div class="basis-2/3 pl-8 group-hover:text-safak-melon group-hover:cursor-pointer duration-500">
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti.</p>
+                            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">On March 16 2023</p>
+                        </div>
+                    </div>
+                    <!-- item4 -->
+                    <div class="flex items-center group basis-3/4 md:basis-1/2">
+                        <!-- News image container -->
+                        <div class="basis-1/3 h-full"> <img src="./images/space7.jfif" class="h-full w-full object cover"></div>
+                        <!-- items detail -->
+                        <div class="basis-2/3 pl-8 group-hover:text-safak-melon group-hover:cursor-pointer duration-500">
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti.</p>
+                            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">On March 16 2023</p>
+                        </div>
+                    </div>
+                    <!-- item5 -->
+                    <div class="flex items-center group basis-3/4 md:basis-1/2 md:hidden lg:flex">
+                        <!-- News image container -->
+                        <div class="basis-1/3 h-full"> <img src="./images/space8.jfif" class="h-full w-full object cover"></div>
+                        <!-- items detail -->
+                        <div class="basis-2/3 pl-8 group-hover:text-safak-melon group-hover:cursor-pointer duration-500">
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti.</p>
+                            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">On March 16 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Matrix section -->
+    <section class="bg-safak-grey">
+        <!-- Matrix section container -->
+        <div class="container flex items-center justify-center relative pl-10 lg:pl-0">
+            <!-- left content -->
+            <div class="hidden md:block md:basis-1/3 lg:basis-1/2">
+                <img src="./images/matrix.png" alt="" class="lg:absolute lg:bottom-0">
+            </div>
+            <!-- Right content  -->
+            <div class="md:basis-2/3 lg:basis-1/2">
+                <!-- right content container -->
+                <div class="flex flex-col justify-center py-10 w-3/4 lg:w-full">
+                    <h3 class="tracking-wider text-safak-melon">Action, Drama, Thriller</h3>
+                    <h2 class="mb-2">Safak Reloaded</h2>
+                    <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque quas mollitia voluptatem, dicta voluptates commodi eligendi architecto dolorum dolorem.</p>
+                    <h3 class="tracking-wider text-safak-red">8 wins 34 nominations</h3>
+                </div>
+            </div>  
+            <!-- oldie -->
+            <div class="left-10 absolute -top-6 md:-top-12 lg:left-0 w-16 h-16 md:w-24 md:h-24 bg-safak-melon rounded-full font-gemunu uppercase font-bold text-sm md:text-xl text-safak-red flex text-center justify-center items-center -rotate-45">Oldie <br>& <br>Goldie</div>
+
+        </div>
+    </section>
+    
+    <!-- Post Section -->
+    <section class="py-24 bg-white text-black dark:bg-black dark:text-safak-grey">
+        <!-- container -->
+        <div class="container">
+            <!-- title -->
+            <h2><a href="#" class="text-safak-red">Popular Posts</a></h2>
+            <!-- Grid Area -->
+            <div class="grid grid-cols-6 gap-10 ">
+                <!-- item-1 -->
+                <div class="col-span-6 md:col-span-3 border border-safak-red">
+                    <!-- item 1 Header -->
+                    <div class="border-b border-safak-red p-4 flex items-center justify-between">
+                        <h3>Caner Demirbas</h3>
+                        <img src="./images/cnr.jpg" class="h-10 rounded-full">
+                    </div>
+                    <!-- item-1 parag-->
+                    <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, iste!</p>
+                    <!-- item-1 footer -->
+                    <div class="flex justify-end border-t border-safak-red items-center space-x-4 font-bold font-gemunu text-sm">
+                        <p>ON MARCH 18, 2023</p>
+                        <div class="flex items-center justify-center space-x-1 pr-2">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>12</p>
+                            <i class="fa-regular fa-heart text-safak-red"></i>
+                            <p>08</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item-2 -->
+                <div class="col-span-6 md:col-span-3 border border-safak-red">
+                    <!-- item 2 Header -->
+                    <div class="border-b border-safak-red p-4 flex items-center justify-between">
+                        <h3>Caner Demirbas</h3>
+                        <img src="./images/cnr.jpg" class="h-10 rounded-full">
+                    </div>
+                    <!-- item-2 parag-->
+                    <p class="p-4 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt!</p>
+                    <!-- item-2 footer -->
+                    <div class="flex justify-end border-t border-safak-red items-center space-x-4 font-bold font-gemunu text-sm">
+                        <p>ON MARCH 18, 2023</p>
+                        <div class="flex items-center justify-center space-x-1 pr-2">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>12</p>
+                            <i class="fa-regular fa-heart text-safak-red"></i>
+                            <p>08</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item-3 -->
+                <div class=" col-span-6 md:col-span-3 lg:col-span-2 border border-safak-red">
+                    <!-- item 3 Header -->
+                    <div class="border-b border-safak-red p-4 flex items-center justify-between">
+                        <h3>Caner Demirbas</h3>
+                        <img src="./images/cnr.jpg" class="h-10 rounded-full">
+                    </div>
+                    <!-- item-3 parag-->
+                    <p class="p-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus eveniet consectetur ea voluptates id.</p>
+                    <!-- item-3 footer -->
+                    <div class="flex justify-end border-t border-safak-red items-center space-x-4 font-bold font-gemunu text-sm">
+                        <p>ON MARCH 18, 2023</p>
+                        <div class="flex items-center justify-center space-x-1 pr-2">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>12</p>
+                            <i class="fa-regular fa-heart text-safak-red"></i>
+                            <p>08</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item-4 -->
+                <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-safak-red">
+                    <!-- item 4 Header -->
+                    <div class="border-b border-safak-red p-4 flex items-center justify-between">
+                        <h3>Caner Demirbas</h3>
+                        <img src="./images/cnr.jpg" class="h-10 rounded-full">
+                    </div>
+                    <!-- item-4 parag-->
+                    <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti, tempore dolorum doloribus repudiandae assumenda.</p>
+                    <!-- item-4 footer -->
+                    <div class="flex justify-end border-t border-safak-red items-center space-x-4 font-bold font-gemunu text-sm">
+                        <p>ON MARCH 18, 2023</p>
+                        <div class="flex items-center justify-center space-x-1 pr-2">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>12</p>
+                            <i class="fa-regular fa-heart text-safak-red"></i>
+                            <p>08</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item-5 -->
+                <div class="hidden lg:block col-span-3 lg:col-span-2 border border-safak-red">
+                    <!-- item 5 Header -->
+                    <div class="border-b border-safak-red p-4 flex items-center justify-between">
+                        <h3>Caner Demirbas</h3>
+                        <img src="./images/cnr.jpg" class="h-10 rounded-full">
+                    </div>
+                    <!-- item-5 parag-->
+                    <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem minima velit optio incidunt harum.</p>
+                    <!-- item-5 footer -->
+                    <div class="flex justify-end border-t border-safak-red items-center space-x-4 font-bold font-gemunu text-sm">
+                        <p>ON MARCH 18, 2023</p>
+                        <div class="flex items-center justify-center space-x-1 pr-2">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>12</p>
+                            <i class="fa-regular fa-heart text-safak-red"></i>
+                            <p>08</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-black dark:bg-black dark:text-safak-grey">
+        <!-- footer container -->
+        <div class="container flex flex-col md:flex-row px-10 lg:px-0 pb-8">
+            <!-- Left content -->
+            <div class="basis-1/3">
+                <a href="#" class="text-2xl lg:text-3xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-safak-red to-safak-grey">Safak</a>
+                <p class="text-sm mt-2 mb-3 md:mb-0">2022 Safakkel No &copy; COPYRIGHT</p>
+            </div>
+            <!-- middle content -->
+            <div class="basis-1/3">
+                <h2 class="mb-2 text-safak-red">LINKS</h2>
+                <div class="grid grid-cols-4 gap-2 uppercase">
+                    <a href="#" class="col-span-2 hover:text-safak-melon duration-500">Movies</a>
+                    <a href="#" class="col-span-2 hover:text-safak-melon duration-500">celebrities</a>
+                    <a href="#" class="col-span-2 hover:text-safak-melon duration-500">Blog</a>
+                    <a href="#" class="col-span-2 hover:text-safak-melon duration-500">News</a>
+                    <a href="#" class="col-span-2 hover:text-safak-melon duration-500">About</a>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="basis-1/3">
+                <h2 class="mb-2 text-safak-red">Follow us</h2>
+                <form action="" class="flex">
+                    <input type="text" placeholder="TYPE YOUR EMAIL" class="py-1 px-2 bg-transparent border border-safak-red placeholder:text-xs outline-none">
+                    <button class="py-1 px-2 border border-safak-red bg-safak-red font-gemunu uppercase">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

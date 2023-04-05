@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-clr">
+    <!-- navigation -->
+    <div class="navigation w-[25rem] h-[4.5rem] bg-white relative flex justify-center items-center rounded-xl">
+        <ul class="flex w-[22rem]">
+            <!-- list -->
+            <li id="list" class="relative active list-none w-[4.5rem] h-[4.5rem] z-10 ">
+                <a href="#" 
+                class="relative w-full  
+                flex justify-center items-center flex-col 
+                text-center font-medium">
+                    <!-- icon  -->
+                    <span class="icon relative block leading-[4.7rem] text-2xl text-center duration-[1s] text-clr "><ion-icon name="home-outline"></ion-icon></span>
+                    <!-- text -->
+                    <span class="text absolute text-clr text-[.75rem] font-normal leading-[.05rem] duration-[.3s] opacity-0 translate-y-5">Home</span>
+                </a>
+            </li>
+            <li id="list" class="relative list-none w-[4.5rem] h-[4.5rem] z-10 ">
+                <a href="#" class="relative flex justify-center items-center flex-col w-full text-center font-medium">
+                    <!-- icon  -->
+                    <span 
+                    class="icon relative block 
+                    leading-[4.7rem] text-2xl text-center text-clr 
+                    duration-[1s]"
+                    ><ion-icon name="person-outline"></ion-icon></span>
+                    <!-- text -->
+                   <span class="text absolute text-clr text-[.75rem] font-normal leading-[.05rem] duration-[.3s] opacity-0  translate-y-5">Profile</span>
+                </a>
+            </li>
+            <li id="list" class="relative list-none w-[4.5rem] h-[4.5rem] z-10 ">
+                <a href="#" class="relative flex justify-center items-center flex-col w-full text-center font-medium">
+                    <!-- icon  -->
+                    <span class="icon relative block leading-[4.7rem] text-2xl text-center duration-[1s] text-clr"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    <!-- text -->
+                    <span class="text absolute text-clr text-[.75rem] font-normal leading-[.05rem] opacity-0 duration-[.3s] translate-y-5">Messages</span>
+                </a>
+            </li>
+            <li id="list" class="relative list-none w-[4.5rem] h-[4.5rem] z-10 ">
+                <a href="#" class="relative flex justify-center items-center flex-col w-full text-center font-medium">
+                    <!-- icon  -->
+                    <span class="icon relative block leading-[4.7rem] text-2xl text-center duration-[1s] text-clr "><ion-icon name="camera-outline"></ion-icon></span>
+                    <!-- text -->
+                    <span class="text absolute text-clr text-[.75rem] font-normal leading-[.05rem] opacity-0 duration-[.3s] translate-y-5">Photos</span>
+                </a>
+            </li>
+            <li id="list" class="relative list-none w-[4.5rem] h-[4.5rem] z-10 ">
+                <a href="#" class="relative flex justify-center items-center flex-col w-full text-center font-medium">
+                    <!-- icon  -->
+                    <span class="icon relative block  leading-[4.7rem] text-2xl text-center duration-[1s] text-clr"><ion-icon name="settings-outline"></ion-icon></span>
+                    <!-- text -->
+                    <span class="text absolute text-clr text-[.75rem] font-normal leading-[.05rem] opacity-0 duration-[.1s] translate-y-5">Settings</span>
+                </a>
+            </li>
+            <!-- indicator -->
+            <div class="indicator absolute -top-1/2 
+            w-[4.5rem] h-[4.5rem] 
+            bg-grena
+            border-[6px] border-solid rounded-[50%] border-clr
+            duration-[.5s]
+            before:content-[''] before:absolute before:top-1/2 before:-left-[1.4rem] before:w-5 before:h-5 before:bg-transparent before:rounded-tr-[1.25rem] before:shadow-indi-box
+            after:content-[''] after:absolute after:top-1/2 after:-right-[1.4rem] after:w-5 after:h-5 after:bg-transparent after:rounded-tl-[1.25rem] after:shadow-indi-box">
+            </div>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('#list');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => 
+        item.addEventListener('click', activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
