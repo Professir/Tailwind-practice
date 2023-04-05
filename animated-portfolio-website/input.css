@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.navbar a {
+    animation-delay: calc(.2s * var(--i));
+}

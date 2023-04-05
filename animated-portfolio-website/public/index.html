@@ -13,50 +13,67 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
-<body class="bg-bg-c">
+<body class="bg-bg-c text-white">
     <!-- header -->
     <header class="fixed top-0 left-0 
     w-full py-5 px-[10%] bg-transparent
     flex justify-between items-center z-50">
 
         <!-- logo -->
-        <a href="#" class="text-2xl text-white no-underline font-semibold cursor-default">Portfolio.</a>
+        <a href="#" class="text-2xl text-white no-underline font-semibold cursor-default opacity-0 animate-slideRight">Portfolio.</a>
 
         <!-- navbar -->
-        <nav class="">
-            <a href="#" id="active" class="text-base no-underline font-medium ml-9 hover:text-a-hov text-a-hov">Home</a>
-            <a href="#" class="text-base text-white no-underline font-medium ml-9 hover:text-a-hov">About</a>
-            <a href="#" class="text-base text-white no-underline font-medium ml-9 hover:text-a-hov">Skills</a>
-            <a href="#" class="text-base text-white no-underline font-medium ml-9 hover:text-a-hov">Portfolio</a>
-            <a href="#" class="text-base text-white no-underline font-medium ml-9 hover:text-a-hov">Contact</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1;" id="active" class="text-base inline-block no-underline font-medium ml-9 hover:text-a-hov text-a-hov duration-[.3s] animate-slideTop opacity-0">Home</a>
+            <a href="#" style="--i:2;" class="text-base text-white inline-block no-underline font-medium ml-9 hover:text-a-hov duration-[.3s]
+            animate-slideTop opacity-0">About</a>
+            <a href="#" style="--i:3;" class="text-base text-white inline-block no-underline font-medium ml-9 hover:text-a-hov duration-[.3s]
+            animate-slideTop opacity-0">Skills</a>
+            <a href="#" style="--i:4;" class="text-base text-white inline-block no-underline font-medium ml-9 hover:text-a-hov duration-[.3s]
+            animate-slideTop opacity-0">Portfolio</a>
+            <a href="#" style="--i:5;" class="text-base text-white inline-block no-underline font-medium ml-9 hover:text-a-hov duration-[.3s]
+            animate-slideTop opacity-0">Contact</a>
         </nav>
 
     </header>
 
     <!-- home -->
-    <section class="">
+    <section class="relative w-full h-screen
+    flex justify-between items-center p-h-pad">
 
-        <!-- home-contact -->
-        <div class="">
-            <h3 class="">Hello, It's Me</h3>
-            <h1 class="">Safak Kel</h1>
-            <h3 class="">And I'm a <span>Frontend Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum unde aliquam debitis et quasi id?</p>
+        <!-- home-content -->
+        <div class="max-w-[38rem]">
+            <h3 class="text-[2rem] font-bold">Hello, It's Me</h3>
+            <h1 class="text-6xl font-bold -my-1 mx-0">Safak Kel</h1>
+            <h3 class="text-[2rem] font-bold mb-8">And I'm a <span class="text-a-hov">Frontend Developer</span></h3>
+            <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum unde aliquam debitis et quasi id?</p>
             
             <!-- social-media -->
             <div class="">
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href="" class="inline-flex justify-center items-center
+                w-10 h-10 bg-transparent 
+                border-2 border-solid border-a-hov rounded-full 
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-facebook'></i></a>
+                <a href="" class="inline-flex justify-center items-center
+                w-10 h-10 bg-transparent 
+                border-2 border-solid border-a-hov rounded-full 
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-twitter'></i></a>
+                <a href="" class="inline-flex justify-center items-center
+                w-10 h-10 bg-transparent 
+                border-2 border-solid border-a-hov rounded-full 
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="" class="inline-flex justify-center items-center
+                w-10 h-10 bg-transparent 
+                border-2 border-solid border-a-hov rounded-full 
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-linkedin' ></i></a>
             </div>
             <!-- btn -->
-            <a href="">Download CV</a>
+            <a href="#" class="inline-block py-5 px-8 bg-a-hov rounded-[2.5rem] shadow-btn-shado text-base text-bg-c leading-[1px] no-underline font-semibold">Download CV</a>
         </div>
 
         <!-- Home-img -->
         <div class="">
-            
+            <img class="max-w-md max-h-80 -mr-5" src="./imgs/monkey-avatar.jpg" alt="">
         </div>
     </section>
 
