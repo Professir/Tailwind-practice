@@ -602,6 +602,38 @@ video {
   max-width: 28rem;
 }
 
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideBottom {
+  animation: slideBottom 1s ease forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 1s ease forwards;
+}
+
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -620,7 +652,7 @@ video {
 
 @keyframes slideTop {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
   }
 
@@ -632,6 +664,36 @@ video {
 
 .animate-slideTop {
   animation: slideTop .5s ease forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-24px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
 }
 
 .cursor-default {
@@ -778,6 +840,33 @@ video {
 
 .navbar a {
   animation-delay: calc(.2s * var(--i));
+}
+
+.home-content h3 {
+  animation-delay: .7s;
+  opacity: 0;
+}
+
+.home-content h1 {
+  animation-delay: 1s;
+}
+
+.home-content p {
+  animation-delay: 1s;
+}
+
+.social-media a {
+  animation-delay: calc(var(--i) * .2s);
+  transition: .5s ease;
+}
+
+.btn {
+  opacity: 0;
+  animation-delay: 1.6s;
+}
+
+.home-img img{
+  animation-delay: 2s, 3s;
 }
 
 .hover\:bg-a-hov:hover {

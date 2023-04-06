@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- taken from https://www.youtube.com/watch?v=S9NOXjdipl4&ab_channel=Codehal -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,41 +43,45 @@
     flex justify-between items-center p-h-pad">
 
         <!-- home-content -->
-        <div class="max-w-[38rem]">
-            <h3 class="text-[2rem] font-bold">Hello, It's Me</h3>
-            <h1 class="text-6xl font-bold -my-1 mx-0">Safak Kel</h1>
-            <h3 class="text-[2rem] font-bold mb-8">And I'm a <span class="text-a-hov">Frontend Developer</span></h3>
-            <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum unde aliquam debitis et quasi id?</p>
+        <div class="home-content max-w-[38rem]">
+            <h3 class="text-[2rem] font-bold animate-slideBottom ">Hello, It's Me</h3>
+            <h1 class="text-6xl font-bold -my-1 mx-0 animate-slideRight opacity-0">Safak Kel</h1>
+            <h3 class="text-[2rem] font-bold mb-8 animate-slideTop">And I'm a <span id="multiple-text" class="text-a-hov"></span></h3>
+            <p class="text-base animate-slideLeft opacity-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum unde aliquam debitis et quasi id?</p>
             
             <!-- social-media -->
-            <div class="">
-                <a href="" class="inline-flex justify-center items-center
+            <div class="social-media">
+                <a href="" style="--i:7" class="inline-flex justify-center items-center
                 w-10 h-10 bg-transparent 
                 border-2 border-solid border-a-hov rounded-full 
-                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-facebook'></i></a>
-                <a href="" class="inline-flex justify-center items-center
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado animate-slideLeft opacity-0"><i class='bx bxl-facebook'></i></a>
+                <a href="" style="--i:8" class="inline-flex justify-center items-center
                 w-10 h-10 bg-transparent 
                 border-2 border-solid border-a-hov rounded-full 
-                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-twitter'></i></a>
-                <a href="" class="inline-flex justify-center items-center
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado animate-slideLeft opacity-0"><i class='bx bxl-twitter'></i></a>
+                <a href="" style="--i:9" class="inline-flex justify-center items-center
                 w-10 h-10 bg-transparent 
                 border-2 border-solid border-a-hov rounded-full 
-                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="" class="inline-flex justify-center items-center
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado animate-slideLeft opacity-0"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="" style="--i:10" class="inline-flex justify-center items-center
                 w-10 h-10 bg-transparent 
                 border-2 border-solid border-a-hov rounded-full 
-                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado"><i class='bx bxl-linkedin' ></i></a>
+                text-[1.25rem] text-a-hov no-underline m-soc-a hover:bg-a-hov hover:text-bg-c hover:shadow-a-hov-shado animate-slideLeft opacity-0"><i class='bx bxl-linkedin' ></i></a>
             </div>
             <!-- btn -->
-            <a href="#" class="inline-block py-5 px-8 bg-a-hov rounded-[2.5rem] shadow-btn-shado text-base text-bg-c leading-[1px] no-underline font-semibold">Download CV</a>
+            <a href="#" 
+            class="btn 
+            inline-block py-5 px-8 bg-a-hov rounded-[2.5rem] shadow-btn-shado 
+            text-base text-bg-c leading-[1px] no-underline font-semibold animate-slideTop">Download CV</a>
         </div>
 
         <!-- Home-img -->
-        <div class="">
-            <img class="max-w-md max-h-80 -mr-5" src="./imgs/monkey-avatar.jpg" alt="">
+        <div class="home-img">
+            <img class="max-w-md max-h-80 -mr-5 animate-zoomIn opacity-0" src="./imgs/monkey-avatar.jpg" alt="">
         </div>
     </section>
 
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

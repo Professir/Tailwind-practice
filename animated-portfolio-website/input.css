@@ -7,3 +7,25 @@
 .navbar a {
     animation-delay: calc(.2s * var(--i));
 }
+
+.home-content h3 {
+    animation-delay: .7s;
+    opacity: 0;
+}
+.home-content h1 {
+    animation-delay: 1s;
+}
+.home-content p {
+    animation-delay: 1s;
+}
+.social-media a {
+    animation-delay: calc(var(--i) * .2s);
+    transition: .5s ease;
+}
+.btn {
+    opacity: 0;
+    animation-delay: 1.6s;
+}
+.home-img img{
+    animation-delay: 2s, 3s;
+}
